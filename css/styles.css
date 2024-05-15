@@ -1,0 +1,41 @@
+body {
+    background-color: #F5ECF3;
+    font-family: "Hind Madurai", sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    font-style:normal;
+    color: #2D262B;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height:1.8;
+    font-style: bold;
+}
+
+h2 {
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 18px;
+    line-height:1.8;
+    font-style: bold;
+    
+}
+h3 {
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height:1.8;
+    font-style: bold;
+    color: #D42183;
+}
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height:1.8;
+    font-style: 100;
+    color: #514B58;
+}
+.highlight{
+    color:#D592ED;
+}
