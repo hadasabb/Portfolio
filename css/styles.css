@@ -36,9 +36,62 @@ h4 {
     font-style: 100;
     color: #514B58;
 }
-.highlight{
+.highlight {
     color:#D592ED;
 }
-img{
+img {
     width:100%;
+}
+
+a {
+    color:#2D262B;
+    text-decoration:none;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #D42183;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding:10px 30px;
+    border-radius:10px;
+    border-bottom:2px solid #E7DFE5;
+    transition: 0.2s opacity;
+}
+
+.button:visited {
+    opacity:0.8;
+    text-decoration:none;
+}
+
+.button:hover,
+.button:focus {
+    opacity:0.8;
+    text-decoration:none;
+    border-bottom:2px solid #514B58;
+}
+
+.button:active {
+    background-color: #D592ED;
+    text-decoration:none;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #D42183;
+    text-transform:uppercase;
+    border:2px solid #D42183;
+}
+
+.button.contact:hover,
+.button:focus {
+    background-color:  #D42183;
+    color: #ffffff;
+    border-bottom:2px solid #514B58;
+}
+
+.button.contact:active {
+    background-color: #D592ED;
+    text-decoration:none;
 }
