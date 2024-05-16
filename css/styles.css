@@ -174,10 +174,12 @@ li {
 } */
 main {
     padding-top:133px;
+    margin-bottom: 133px;
+    background-color: #E7DFE5;
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 100%;
     padding: 0 15px;
 }
 #work .row{
@@ -204,8 +206,13 @@ main {
 /* do I have to align the button left here as well?*/
 
 
-#contact .container{
-    background: #272339;
+#contact {
+    background-color: #272339;
+    text-align:center;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
 }
 #contact .container h2{
     color: #ACA7B4;
@@ -214,3 +221,12 @@ main {
     color: #ACA7B4;
 }
 
+
+#contact .container .icons {
+    position: absolute;
+    top: 40px;
+    max-width: 50px;
+    display:inline-block;
+    align-items: center;
+
+}
