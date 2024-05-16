@@ -33,7 +33,7 @@ h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height:1.8;
-    font-style: 100;
+    font-weight: 400;
     color: #514B58;
 }
 .highlight {
@@ -44,10 +44,27 @@ img {
 }
 
 a {
+    font-weight:500;
     color:#2D262B;
+    text-decoration:none;
+    
+}
+/*  !!!!!!!!!!!!!*/
+.a:visited {
+    opacity:0.8;
     text-decoration:none;
 }
 
+.a:hover,
+.a:focus {
+    opacity:0.8;
+    text-decoration:none;
+}
+
+.a:active {
+    background-color: #D42183;
+    text-decoration:none;
+}
 
 .button {
     display: inline-block;
@@ -95,3 +112,105 @@ a {
     background-color: #D592ED;
     text-decoration:none;
 }
+
+header {
+    background-color:#FDF6FC;
+    text-align: center;
+    padding: 10px 0;
+    /*border-bottom: 2px solid #E7DFE5;*/
+    box-shadow: 0 3px 3px #E7DFE5;
+    position:fixed;
+    width:100%;
+    display:inline-block;
+}
+
+#hero {
+    background-color:#F5ECF3;
+    padding: 20px 0;
+    display: inline-block;
+    width:100%;
+    
+}
+
+div,span {
+    box-sizing:border-box;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display:inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    font-weight: 200;
+    color:#514B58
+}
+header .container{
+    display: inline-block;
+}
+/*
+span:nth-of-type(4) {
+    display:inline-block;
+}
+
+/*.navigation {
+    position: relative;
+    height: 72px;
+    display: flex;
+    align-items: left;
+}
+
+li {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display:inline-block;
+    margin-right:10px;
+} */
+main {
+    padding-top:133px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+}
+#work .row{
+    padding: bottom 50px;
+    border-bottom:2px solid #E7DFE5;
+
+}
+#hero h1{
+    text-align:center;
+}
+#work .container{
+    background: #E7DFE5;
+}
+.logo {
+    max-width:250px;
+}
+
+#work .container h3{
+    text-align: left;
+}
+#work .container p{
+    text-align: left;
+}
+/* do I have to align the button left here as well?*/
+
+
+#contact .container{
+    background: #272339;
+}
+#contact .container h2{
+    color: #ACA7B4;
+}
+#contact .container p{
+    color: #ACA7B4;
+}
+
