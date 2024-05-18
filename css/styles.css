@@ -1,7 +1,11 @@
+* {
+    box-sizing:border-box;
+}
+
 body {
-    background-color: #F5ECF3;
+    background-color: #5A2971;
     font-family: "Hind Madurai", sans-serif;
-    font-size:16px;
+    font-size:18px;
     line-height:1.6;
     font-style:normal;
     color: #2D262B;
@@ -11,23 +15,24 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     line-height:1.8;
-    font-style: bold;
+    font-weight: bold;
 }
 
 h2 {
     font-family: "Mukta Vaani", sans-serif;
     font-size: 18px;
     line-height:1.8;
-    font-style: bold;
+    font-weight: bold;
+    text-align: center;
     
 }
 h3 {
     font-family: "Mukta Vaani", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     line-height:1.8;
-    font-style: bold;
-    color: #D42183;
+    font-weight: bold;
+    color: #5A2971;
 }
 h4 {
     font-family: "Montserrat", sans-serif;
@@ -37,7 +42,7 @@ h4 {
     color: #514B58;
 }
 .highlight {
-    color:#D592ED;
+    color:#B85DE3;
 }
 img {
     width:100%;
@@ -68,13 +73,14 @@ a {
 
 .button {
     display: inline-block;
-    background-color: #D42183;
+    background-color: #5A2971;
     color: #FFFFFF;
     font-weight: 400;
     padding:10px 30px;
     border-radius:10px;
     border-bottom:2px solid #E7DFE5;
     transition: 0.2s opacity;
+    margin-bottom:10px;
 }
 
 .button:visited {
@@ -96,14 +102,14 @@ a {
 
 .button.contact {
     background-color: transparent;
-    color: #D42183;
+    color: #B85DE3;
     text-transform:uppercase;
-    border:2px solid #D42183;
+    border:2px solid #B85DE3;
 }
 
 .button.contact:hover,
 .button:focus {
-    background-color:  #D42183;
+    background-color:  #B85DE3;
     color: #ffffff;
     border-bottom:2px solid #514B58;
 }
@@ -113,21 +119,52 @@ a {
     text-decoration:none;
 }
 
-header {
-    background-color:#FDF6FC;
-    text-align: center;
-    padding: 10px 0;
-    /*border-bottom: 2px solid #E7DFE5;*/
-    box-shadow: 0 3px 3px #E7DFE5;
-    position:fixed;
-    width:100%;
-    display:inline-block;
+/* card container*/
+.row {
+    display:flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;
+    
 }
 
+/* the actual card with 50% pic 50% description*/
+.fifty {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #FBF7F4;
+    margin-bottom: 10px;
+}
+
+.fifty img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.project-description{
+    padding: 0px 24px 24px 24px;
+    width: 100%;
+    border-radius: 20px;
+}
+header {
+    background-color:#FBF7F4;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid #EAE2EE;
+    box-shadow: 0 1px 20px #0000000f;
+    position:fixed;
+    width:100%;
+    top: 0px;
+    right: 0;
+}
+/*#header-logo-nav img{
+    size;
+}
+/*
+nav
 #hero {
     background-color:#F5ECF3;
     padding: 20px 0;
-    display: inline-block;
+    display: block;
     width:100%;
     
 }
@@ -135,6 +172,11 @@ header {
 div,span {
     box-sizing:border-box;
 }
+
+nav{
+    width: 100%;
+}
+*/
 
 nav > ul {
     list-style-type: none;
@@ -147,72 +189,48 @@ nav > ul > li {
 
 nav > ul > li > a {
     padding: 0 15px;
-    font-weight: 200;
-    color:#514B58
+    font-weight: 400;
+    color:#100F0F
 }
-header .container{
+
+
+
+#hero {
+    background-color:#F6F2EF;
+    padding: 59px 10px 0px 10px;
     display: inline-block;
-}
-/*
-span:nth-of-type(4) {
-    display:inline-block;
+    width:100%;   
+    text-align:center; 
 }
 
-/*.navigation {
-    position: relative;
-    height: 72px;
-    display: flex;
-    align-items: left;
-}
-
-li {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display:inline-block;
-    margin-right:10px;
-} */
 main {
-    padding-top:133px;
-    margin-bottom: 133px;
-    background-color: #E7DFE5;
+    padding-top: 160px;
+    background-color: #EFEBE9;
 }
 
 .container{
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 #work .row{
-    padding: bottom 50px;
+    /*padding-bottom: 50px;  the space between cards???*/
     border-bottom:2px solid #E7DFE5;
 
 }
-#hero h1{
-    text-align:center;
-}
 #work .container{
-    background: #E7DFE5;
+    background: #EFEBE9;
 }
 .logo {
-    max-width:250px;
+    max-width:202px;
+    padding-top: 36px;
 }
 
-#work .container h3{
-    text-align: left;
-}
-#work .container p{
-    text-align: left;
-}
-/* do I have to align the button left here as well?*/
-
-
+/* we used flexbox in the footer*/
 #contact {
-    background-color: #272339;
+    background-color: #221826;
     text-align:center;
-    padding: 40px;
-    display: inline-block;
-    width: 100%;
-    position: relative;
+    padding: 40px 0;
+    text-align:center;
 }
 #contact .container h2{
     color: #ACA7B4;
@@ -223,10 +241,80 @@ main {
 
 
 #contact .container .icons {
-    position: absolute;
-    top: 40px;
-    max-width: 50px;
-    display:inline-block;
-    align-items: center;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    margin: 60px auto;
 
 }
+
+#contact .container .icons img{
+    height: 50px;
+}
+#contact p{
+    font-size: 16;
+}
+.dot{
+    height: 8px;
+    width: 8px;
+    background-color: #B85DE3;
+    border-radius:50%;
+    display:inline-block;
+}
+/*
+@media media-type and (media-feature: media-value){  
+
+}*/
+
+
+/* tablet
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+        
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+
+    }
+
+   /* #hero span{  
+        display: block;
+    }
+
+    .col-md-6 { /* col columns, md medium devices, 6 because there are 12 columns in total and we need 50% of them
+        width: 50%;
+      }
+    [class*="col-"]{
+        float: left;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .container {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    body{
+        font-size: 18px;
+    }
+}
+
+
+/* desktop
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}*/

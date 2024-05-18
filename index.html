@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <div class="container">
+            <div class="container" id="header-logo-nav">
                 <img src="img/logo.png" alt="Hadasa Bogatean" class="logo">
                 <nav>
                     <ul class="navigation">
@@ -25,35 +25,38 @@
             </div>
         </header>
         <main>
-            <div id="hero">
-                <div class="container">
-                    <h1>Hi, I’m <span class="highlight">Hadasa</span>! 
-                        <br>
-                        <span>A proactive UX designer deeply passionate about <span class="highlight">mindfulness</span> and enhancing health experiences through <span class="highlight">Tech</span> and <span class="highlight">AI</span></span>
-                     </h1>   
-                     <h4> I aim to leverage my UX skills and background in operations management in a full time, remote UX Design position to contribute to research backed designs.</h4>
+                <div id="hero">
+                    <div class="container">
+                        <h1>Hi, I’m <span class="highlight">Hadasa</span>! 
+                            <br>
+                            <span>A proactive UX designer deeply passionate about <span class="highlight">mindfulness</span> and enhancing health experiences through <span class="highlight">Tech</span> and <span class="highlight">AI</span></span>
+                        </h1>   
+                        <h4> I aim to leverage my UX skills and background in operations management in a full time, remote UX Design position to contribute to research backed designs.</h4>
+                    </div>
                 </div>
                 <div id="work">
                     <div class="container">
                         <h2>My Work</h2>
-                        <div class="row"><!-- green box-->
-                            <div class="picture-and-description">
+                        <div class="row"><!-- the whole card space-->
+                            <div class="fifty"> <!-- the actual card with 50% of space as pic and other 50% for description-->
                                 <picture>
                                     <source media="(max-width:767px)" srcset="img/glow/glow@1x.png">
                                     <img src="img/glow/glow@2x.png" alt="Glow project logo">
                                 </picture>
-                                <div class="title-description-of-project"><!-- Ttile and Description of project-->
+                                <div class="project-description"><!-- second part of the 50% 50% (it's also a row for mobile)-->
                                     <h3>Glow Project</h3>
                                     <p>In the process of designing glow web app, I used a process similar to design thinking but made use of other standard best practices like Lean UX, UCD and Double Diamond. Tools used to design this app were Figma, FigJam, Lyssna, Optimal Sort, Typeform, </p>
                                     <a href="./glow.html" class="button">View Project</a>
                                 </div>
                             </div>
-                            <div>
-                                <picture>
+                        </div>
+                        <div class="row">
+                            <div class="fifty">
+                                 <picture>
                                     <source media="(max-width: 767px)" srcset="img/flip/flip@1x.png">
                                     <img src="img/flip/flip@2x.png" alt="Flip project logo">
                                 </picture> 
-                                <div class="title-description-of-project"><!-- Ttile and Description of project-->
+                                <div class="project-description"><!-- Ttile and Description of project-->
                                     <h3>Flip Project</h3>
                                     <p>In the process of designing Flip app, I used a process similar to design thinking and focused on user research and testing as well as rapid prototyping. Besides pen and paper, the only tool I used was Marvel prototyping app. </p>
                                     <a href="#" class="button">View Project</a>
@@ -61,8 +64,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               </div>
         </main>
         <footer id="contact">
             <div class="container">
@@ -74,17 +76,13 @@
                 </div>
                 <div class="icons">
                     <!--other socials-->
-                    <div class="icon">
                         <a href="https://discord.gg/lumi#1191" target="_blank">
                             <img src="img/discord.svg" alt="My Discord Account">
                         </a>
-                    </div>
-                    <div class="icon"></div>
                         <a href="https://www.linkedin.com/in/hadasa-bogatean-abb3a9173/" target="_blank">
-                        <img src="img/linkedin.svg" alt="My Linkedin Profile">
-                    </a>
+                             <img src="img/linkedin.svg" alt="My Linkedin Profile">
+                         </a>
                 </div>
-                <div>
                     <p>Copyright Hadasa Bogatean 2024</p>
                 </div>
             </div>
