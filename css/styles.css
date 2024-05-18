@@ -16,6 +16,7 @@ h1 {
     font-size: 24px;
     line-height:1.8;
     font-weight: bold;
+    letter-spacing: -1.2px;
 }
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
     line-height:1.8;
     font-weight: bold;
     text-align: center;
+    padding: 10px 0px 20px 0px;
     
 }
 h3 {
@@ -35,10 +37,10 @@ h3 {
     color: #5A2971;
 }
 h4 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Madurai", sans-serif;
     font-size: 18px;
     line-height:1.8;
-    font-weight: 400;
+    font-weight: 300;
     color: #514B58;
 }
 .highlight {
@@ -197,10 +199,10 @@ nav > ul > li > a {
 
 #hero {
     background-color:#F6F2EF;
-    padding: 59px 10px 0px 10px;
+    padding: 40px 0px 20px 0px;
     display: inline-block;
     width:100%;   
-    text-align:center; 
+    text-align:center;
 }
 
 main {
