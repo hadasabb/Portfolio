@@ -118,7 +118,7 @@ a {
 
 .button.contact:active {
     background-color: #D592ED;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 /* card container*/
@@ -136,6 +136,30 @@ a {
     border-radius: 20px;
     background-color: #FBF7F4;
     margin-bottom: 10px;
+}
+
+.my-story-card {
+    width: 100%;
+    border: 3px #100F0F;
+    border-radius: 20px;
+    background-color: #FBF7F4;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.my-story-card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.download-button-container{
+    display:flex;
+    justify-content: center;
 }
 
 .fifty img{
@@ -195,6 +219,9 @@ nav > ul > li > a {
     color:#100F0F
 }
 
+.nav-selected{
+    color: #B85DE3;
+}
 
 
 #hero {
@@ -258,6 +285,57 @@ main {
 #contact p{
     font-size: 16;
 }
+
+.me img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 70px;
+}
+
+.download-button a {
+    align-content: center;
+}
+
+#about-title-and-pic {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.abouttitle{
+    text-align:center;
+    /*margin-bottom: 10px;*/
+}
+.pic-of-me {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#about-title-and-pic picture {
+    width: 200px;
+}
+
+#st-section {
+    padding: 10px;
+    background-color: #FBF7F4;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+#st-section .st-container {
+    display:flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+#wrapper {
+    margin-bottom: 100px;
+}
+
+
+
+
 
 /*.dot{ /* this was suppose to be 
     height: 8px;
