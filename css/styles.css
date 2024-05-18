@@ -258,7 +258,8 @@ main {
 #contact p{
     font-size: 16;
 }
-.dot{
+
+/*.dot{ /* this was suppose to be 
     height: 8px;
     width: 8px;
     background-color: #B85DE3;
