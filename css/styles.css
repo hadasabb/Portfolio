@@ -383,19 +383,22 @@ main {
         display: block;
         width: auto;
     }
-
-    .col-md-6 { /* col columns, md medium devices, 6 because there are 12 columns in total and we need 50% of them*/
+    /*
+    .col-md-6 { /* col columns, md medium devices, 6 because there are 12 columns in total and we need 50% of them
         width: 50%;
+        border-radius: 20px 0px 0px 20px;
       }
+    
     [class*="col-"]{
         float: left;
     }
-    .row::after {
+    row::after {
         content: "";
         clear: both;
         display: table;
-      }
-      .container {
+      }*/
+    
+     .container { 
         max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
@@ -404,34 +407,80 @@ main {
     body{
         font-size: 18px;
     }
+    .fifty{
+        display:grid;
+        grid-template-columns:50% 50%;
+    }
 }
 
 
-/* desktop
-@media only screen and (min-width: 1024px) and (orientation: portrait) {
+/* desktop*/
+@media only screen and (min-width: 1024px) {
     .container {
         max-width: 1441px;
         margin-left: auto;
         margin-right: auto;
         }
-    #hero span{
-        .col-lg-8
-
-        .col-lg-4
+    header {
+            text-align: unset;
+            padding: 20px 0 13px;
+            font-size: 24px;
+        }
+    
+    .logo{
+            margin-top: 2px;
+            float:left;
+        }
+     nav {
+            width: auto;
+            float: right;
+            margin-top: 4px;
+    
+        }   
+    
+    #hero {  
+            display: block;
+            width: auto;
+        }        
+   
+    .fifty{
+        display:grid;
+        grid-template-columns:60% 40%;
     }
-
-   the card name {
-        text-align: unset;
-        padding: 20px 0 13px;
-        
-    }
-
-    the image name{
-        margin-top: -12px;
+    /*.fifty {
+        max-width: 1141px;
+        margin-left: auto;
+        margin-right: auto; 
+    }*/
+    
+    /*.col-lg-8 {
+        width: 60%;
         float:left;
+        border-radius: 20px 0px 0px 20px;
     }
-    the description name {
-        width: auto;
+    .col-lg-6 {
+        width: 40%;
         float: right;
-        margin-top: 4px;
-} */
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }*/
+      body{
+        font-size: 24px;
+    }  
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 48px;
+        line-height:1.8;
+        font-weight: bold;
+        letter-spacing: -1.2px;
+    }
+    
+    h2, h2, h3, h4 {
+        font-size: 36px;  
+    }
+    
+}
