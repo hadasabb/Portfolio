@@ -54,22 +54,24 @@ a {
     font-weight:500;
     color:#2D262B;
     text-decoration:none;
-    
+    transition-duration: 0.2s;
 }
 /*  !!!!!!!!!!!!!*/
-.a:visited {
+/*.a:visited {
     opacity:0.8;
     text-decoration:none;
-}
+}*/
 
-.a:hover,
-.a:focus {
+a:hover,
+a:focus {
     opacity:0.8;
     text-decoration:none;
+    color: #B85DE3;
+    transition-duration: 0.2s;
 }
 
-.a:active {
-    background-color: #D42183;
+a:active {
+    color: #D592ED;
     text-decoration:none;
 }
 
@@ -81,7 +83,7 @@ a {
     padding:10px 30px;
     border-radius:10px;
     border-bottom:2px solid #E7DFE5;
-    transition: 0.2s opacity;
+    transition: 0.8s opacity;
     margin-bottom:10px;
 }
 
@@ -107,6 +109,8 @@ a {
     color: #B85DE3;
     text-transform:uppercase;
     border:2px solid #B85DE3;
+    transition-duration: 2s;
+    transition-property: opacity;
 }
 
 .button.contact:hover,
@@ -114,6 +118,7 @@ a {
     background-color:  #B85DE3;
     color: #ffffff;
     border-bottom:2px solid #514B58;
+    
 }
 
 .button.contact:active {
