@@ -241,6 +241,7 @@ main {
     max-width: 100%;
     padding: 0 10px;
 }
+
 #work .row{
     /*padding-bottom: 50px;  the space between cards???*/
     border-bottom:2px solid #E7DFE5;
@@ -329,10 +330,19 @@ main {
     padding: 0px 10px;
     margin-bottom: 10px;
 }
-#wrapper {
-    margin-bottom: 100px;
-}
 
+.container-process {
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+/*#glow{
+    background-color: #F6F2EF;
+    padding: 40px 10px;
+}
 
 
 

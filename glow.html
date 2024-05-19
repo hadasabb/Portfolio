@@ -10,106 +10,112 @@
     </head>
     <body>
         <header>
-            <div>
-                <img src="img/logo.png" alt="Hadasa Bogatean">
- 
-                    <ul>
-                        <li><a href="./glow.html" class="nav-selected">Work</a></li>
-                        <li><a href="./about.html" target="_blank">About</a></li>
+            <div class="container">
+                <img src="img/logo.png" alt="Hadasa Bogatean" class="logo">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="./glow.html"class="nav-selected">Work</a></li>
+                        <li><a href="./about.html" target="_blank" >About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-
+                </nav>
             </div>
         </header>
         <main>
-            <div>
-                <div>
-                    <h1>Glow</h1>   
-                </div>
-                <div>
-                    <picture>
-                        <source media="(max-width:767px)" srcset="img/glow/glow@1x.png">
-                        <img src="img/glow/glow@2x.png" alt="Glow project logo">
-                    </picture>
-                    <div>
-                        <p>In the process of designing glow web app, I used a process similar to design thinking but made use of other standard best practices like Lean UX, UCD and Double Diamond. Tools used to design this app were Figma, FigJam, Lyssna, Optimal Sort, Typeform, </p>
-                    </div>
-                </div>
-                <h2>My Process</h2>
-                        <div><!-- green box-->
-                            <div>
+            <div id="glow">
+                <div class="container">
+                            <h2>Glow</h2>
+                            <div class="row">
+                                <div class="fifty">
+                                    <picture>
+                                        <source media="(max-width:767px)" srcset="img/glow/glow@1x.png">
+                                        <img src="img/glow/glow@2x.png" alt="Glow project logo">
+                                    </picture>
+                                    <p class="project-description">In the process of designing glow web app, I used a process similar to design thinking but made use of other standard best practices like Lean UX, UCD and Double Diamond. Tools used to design this app were Figma, FigJam, Lyssna, Optimal Sort, Typeform, </p>
+                                </div>  
+                        </div>
+                    <div class="container-process">
+                        <h2>My Process</h2>
+                        <div class="row-process">
+                            <div class="fifty">
                                 <picture>
                                     <source media="(max-width:767px)" srcset="img/glow/research@1x.png">
                                     <img src="img/glow/research@2x.png" alt="User Research Results">
                                 </picture>
-                                <div>
+                                <div class="project-description">
                                     <h3>Research</h3>
                                     <p>Research was conducted through both user surveys and user interviews.</p>
                                 </div>
                             </div>
-                            <div>
+
+                            <div class="fifty">
                                 <picture>
                                     <source media="(max-width: 767px)" srcset="img/glow/ideation@1x.png">
                                     <img src="img/glow/ideation@2x.png" alt="Ideation Process">
                                 </picture> 
-                                <div><!-- Ttile and Description of project-->
+                                <div class="project-description"><!-- Ttile and Description of project-->
                                     <h3>Ideation</h3>
                                     <p>The self-monitoring feature has evolved from its initial two big cards into a more descriptive card, since during usability testing some users did not realise they were clickable. In the new design, both mind and body have their own cards next to the other core features: time tracking and recharge feature.</p>
                                 </div>
                             </div>
-                            <div>
+
+                            <div class="fifty"> 
                                 <picture>
                                     <source media="(max-width: 767px)" srcset="img/glow/wireframing@1x.png">
                                     <img src="img/glow/wireframing@2x.png" alt="Wireframing Process">
                                 </picture> 
-                                <div><!-- Ttile and Description of project-->
+                                <div class="project-description"><!-- Ttile and Description of project-->
                                     <h3>Wireframing</h3>
                                     <p>On the journey of building this web app, I followed an iterative design process. I started with paper sketches and improved screens along the way, by focusing on adding more complexity, depth and design principles from following the usability guidelines, to choosing colours, forms or fonts etc.</p>
                                 </div>
                             </div>
-                            <div>
+
+                            <div class="fifty">
                                 <picture>
                                     <source media="(max-width: 767px)" srcset="img/glow/design@1x.png">
                                     <img src="img/glow/design@2x.png" alt="Design Process">
                                 </picture> 
-                                <div><!-- Ttile and Description of project-->
+                                <div class="project-description"><!-- Ttile and Description of project-->
                                     <h3>Design</h3>
                                     <p>Usability Testing - it helped me understand how the designs of three features are used by users and where to implement changes</p>
                                 </div>
                             </div>
-                            <div>
+
+                            <div class="fifty">
                                 <picture>
                                     <source media="(max-width: 767px)" srcset="img/glow/prototyping@1x.png">
                                     <img src="img/glow/prototyping@2x.png" alt="Ideation Process">
                                 </picture> 
-                                <div><!-- Ttile and Description of project-->
+                                <div class="project-description"><!-- Ttile and Description of project-->
                                     <h3>Prototype</h3>
                                     <p>Prototype was built in Figma.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
             </div>
         </main>
+        
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Would you like to collaborate? Please get in touch with me at 0745384638937.</p>
                 <div>
                     <!--email-->
-                    <a href="mailto:hadasa.b@proton.me">Email me</a>
+                    <a href="mailto:hadasa.b@proton.me" class="button contact">Email me</a>
                 </div>
-                <div>
+                <div class="icons">
                     <!--other socials-->
-                    <a href="https://discord.gg/lumi#1191" target="_blank">
-                        <img src="img/discord.svg" alt="My Discord Account">
-                    </a>
-                    <a href="https://www.linkedin.com/in/hadasa-bogatean-abb3a9173/" target="_blank">
-                        <img src="img/linkedin.svg" alt="My Linkedin Profile">
-                    </a>
+                        <a href="https://discord.gg/lumi#1191" target="_blank">
+                            <img src="img/discord.svg" alt="My Discord Account">
+                        </a>
+                        <a href="https://www.linkedin.com/in/hadasa-bogatean-abb3a9173/" target="_blank">
+                             <img src="img/linkedin.svg" alt="My Linkedin Profile">
+                         </a>
                 </div>
-                <div>
-                    <p>Copyright Hadasa Bogatean 2024</p>
-                </div>
+                <p>Copyright Hadasa Bogatean 2024</p>
+                
             </div>
         </footer>
     </body>
