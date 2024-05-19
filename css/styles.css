@@ -364,6 +364,39 @@ main {
 
 }*/
 
+@keyframes color-change{
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+.sun {
+    animation-duration: 1s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }  
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 28s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 30s cloud-move-reverse infinite alternate linear;
+  }
 
 /* tablet*/
 @media only screen and (min-width: 640px) {
