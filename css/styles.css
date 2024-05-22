@@ -211,6 +211,7 @@ nav{
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin 0;
 }
 
 .navtoggle li:not(:last-child){
@@ -219,6 +220,10 @@ nav > ul {
 .navtoggle, .navtoggle.responsive {
     position: relative;
   }
+.navtoggle.responsive li  {
+    display: block;
+  }
+
 .navtoggle li .icon {
     position: absolute;
     right: 0;
@@ -235,7 +240,6 @@ nav > ul > li > a {
     color: #B85DE3;
 }
 
-
 #hero {
     background-color:#F6F2EF;
     padding: 40px 0px 20px 0px;
@@ -245,7 +249,7 @@ nav > ul > li > a {
 }
 
 main {
-    padding-top: 160px;
+    padding-top: 90px;
     background-color: #EFEBE9;
 }
 
@@ -431,6 +435,9 @@ main {
         margin-top: 4px;
 
     }
+    nav>ul{
+        margin: 1em 0;
+    }
 
    #hero {  
         display: block;
@@ -478,6 +485,8 @@ main {
     nav > ul > li {
         display:inline-block;
     }
+    
+
     .navtoggle li:not(:last-child){
         display:inline-block;
     }
