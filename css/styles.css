@@ -1,7 +1,9 @@
 * {
     box-sizing:border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #5A2971;
     font-family: "Hind Madurai", sans-serif;
@@ -211,7 +213,7 @@ nav{
 nav > ul {
     list-style-type: none;
     padding: 0;
-    margin 0;
+    margin: 0;
 }
 
 .navtoggle li:not(:last-child){
@@ -220,8 +222,12 @@ nav > ul {
 .navtoggle, .navtoggle.responsive {
     position: relative;
   }
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }  
 .navtoggle.responsive li  {
     display: block;
+    padding: 8px 0;
   }
 
 .navtoggle li .icon {
@@ -233,7 +239,7 @@ nav > ul {
 nav > ul > li > a {
     padding: 0 15px;
     font-weight: 400;
-    color:#100F0F
+    color:#100F0F;
 }
 
 .nav-selected{
@@ -241,15 +247,28 @@ nav > ul > li > a {
 }
 
 #hero {
+    background-color: #F6F2EF;
+    padding: 100px 0px 60px 0px;
+    display: inline-block;
+    width: 100%;   
+    text-align: center;
+}
+#wp-about {
     background-color:#F6F2EF;
-    padding: 40px 0px 20px 0px;
+    padding: 60px 0px 40px 0px;
+    display: inline-block;
+    width: 100%;   
+    text-align: center;
+}
+#glow .container{
+    background-color:#F6F2EF;
+    padding: 60px 0px 60px 0px;
     display: inline-block;
     width:100%;   
     text-align:center;
 }
-
 main {
-    padding-top: 90px;
+    padding-top: 80px;
     background-color: #EFEBE9;
 }
 
